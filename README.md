@@ -1,28 +1,12 @@
-# Deploying this portfolio to GitHub Pages
+# Pansilu Harshan Liyanage — Portfolio
 
-## File structure (already set up)
-```
-your-repo/
-├── index.html
-└── assets/
-    └── profile-photo.jpg   ← your photo, already in place
-```
+Personal portfolio site of Pansilu Harshan Liyanage, a final-year Electrical and Electronic Engineering undergraduate at the University of Jaffna, Sri Lanka.
 
-## Push to GitHub
-1. Create a new repository at github.com (public, no README needed — you already have this file)
-2. In the repo, click **Add file → Upload files**
-3. Drag in `index.html` and the `assets` folder (with `profile-photo.jpg` inside)
-4. Commit the changes
+Live site: _add your GitHub Pages URL here_
 
-## Enable GitHub Pages
-1. Repo → **Settings** → **Pages**
-2. Source: `Deploy from a branch`
-3. Branch: `main`, folder: `/ (root)`
-4. Save — live in a minute or two at `https://<your-username>.github.io/<your-repo>/`
+## About
+Built with plain HTML, CSS, and JavaScript — no frameworks, no build step. Showcases my embedded systems, robotics, and engineering projects, along with skills, education, and involvement.
 
-## Before going fully live
-- Update the GitHub link in the footer (currently a placeholder `#`)
-- Check the photo crop at different screen widths — if it looks off, adjust
-  `object-position` in the `.hero-photo-panel img` CSS rule inside `index.html`
-
-No build step, no dependencies — `index.html` is the entire site.
+## Contact
+- Email: pansiluharshan003@gmail.com
+- LinkedIn: https://linkedin.com/in/pansiluharshan
