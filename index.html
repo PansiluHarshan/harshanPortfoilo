@@ -39,7 +39,6 @@
   .wrap{ max-width: 780px; margin: 0 auto; padding: 0 32px; }
   section[id]{ scroll-margin-top: 90px; }
 
-  /* SCROLL PROGRESS */
   #progress-bar{
     position: fixed; top:0; left:0; height: 2px;
     background: var(--gold);
@@ -48,7 +47,6 @@
     transition: width 0.1s linear;
   }
 
-  /* NAV */
   nav{
     position: sticky; top:0; z-index: 900;
     display:flex; justify-content:space-between; align-items:center;
@@ -95,7 +93,6 @@
     nav .menu-toggle{ display:block; }
   }
 
-  /* SPLIT HERO */
   .split-hero{
     display:flex;
     min-height: calc(100vh - 73px);
@@ -178,7 +175,6 @@
     .hero-panel h1{ font-size: 34px; }
   }
 
-  /* DIVIDER */
   .divider{ display:flex; align-items:center; justify-content:center; gap:14px; }
   .divider .rule{ flex:1; height:1px; background: var(--line); }
   .divider .mark{ width:5px; height:5px; border-radius:50%; background: var(--gold); opacity:0.7; }
@@ -198,7 +194,6 @@
     font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em;
   }
 
-  /* PROJECT CARDS — simple, consistent */
   .project-card{
     display:grid;
     grid-template-columns: 56px 1fr;
@@ -229,7 +224,6 @@
     color: var(--gold-light); letter-spacing: 0.02em; opacity: 0.85;
   }
 
-  /* SKILLS */
   .skills-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 38px; }
   .skill-col h3{
     font-family:'Fraunces', serif; font-style:italic; font-size: 15px;
@@ -237,9 +231,7 @@
   }
   .skill-col ul{ list-style:none; padding:0; margin:0; }
   .skill-col li{ font-size: 14px; padding: 5px 0; color: var(--text-dim); font-weight:300; }
-  .soft-skills{
-    margin-top: 40px; text-align:center;
-  }
+  .soft-skills{ margin-top: 40px; text-align:center; }
   .soft-skills .label{
     font-family: 'IBM Plex Mono', monospace; font-size: 10.5px;
     letter-spacing: 0.08em; color: var(--text-faint); margin-bottom: 14px;
@@ -251,7 +243,6 @@
     padding: 6px 14px;
   }
 
-  /* EDUCATION */
   .edu-item{
     display:grid; grid-template-columns: 1fr auto; gap: 6px 20px;
     padding: 18px 0; border-bottom: 1px solid var(--line); align-items: baseline;
@@ -261,7 +252,6 @@
   .edu-item .when{ font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--gold-light); grid-column:2; }
   .edu-item .where{ grid-column: 1/-1; font-size: 13.5px; color: var(--text-dim); font-style: italic; font-family:'Fraunces', serif; }
 
-  /* INVOLVEMENT */
   .involve-list{ list-style:none; padding:0; margin:0; }
   .involve-list li{
     display:flex; justify-content:space-between; gap: 20px;
@@ -271,14 +261,6 @@
   .involve-list li:last-child{ border-bottom:none; }
   .involve-list strong{ color: var(--text); font-weight: 500; }
   .involve-list .when{ font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--text-faint); white-space: nowrap; }
-
-
-  /* NOW */
-  .now-block{ text-align:center; }
-  .now-block p{
-    font-family:'Fraunces', serif; font-style: italic; font-size: 18px; color: var(--text);
-    max-width: 52ch; margin: 0 auto; font-weight: 300; line-height: 1.6;
-  }
 
   footer{ padding: 64px 0 50px; text-align:center; }
   footer .sign{ font-family: 'Fraunces', serif; font-style: italic; font-size: 15px; color: var(--text-dim); margin-bottom: 8px; }
@@ -341,7 +323,7 @@
   </div>
 
   <div class="hero-photo-panel">
-    <img src="assets/profile-photo.jpg" alt="Pansilu Harshan Liyanage">
+    <img src="assets/profile.jpg" alt="Pansilu Harshan Liyanage">
   </div>
 </section>
 
@@ -420,43 +402,6 @@
         <h3>Smart Plug for Smart Home Automation</h3>
         <p>A smart plug system for controlling electrical equipment through intelligent automation and remote control, converting everyday household appliances into smart home devices.</p>
         <div class="tech">ESP32 · IoT · Relay Modules</div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"><div class="rule"></div><div class="mark"></div><div class="rule"></div></div>
-
-  <section data-reveal>
-    <h2 class="section-title">Other Projects</h2>
-    <div class="section-sub">PERSONAL BUILDS, IN PROGRESS</div>
-
-    <div class="project-card">
-      <div class="numeral">·</div>
-      <div>
-        <span class="tag">PROTOTYPING</span>
-        <h3>Mini Drone, Built from Scratch</h3>
-        <p>A ground-up flight controller build using an ESP32 and 720 coreless motors, with logic-level MOSFET switching for motor control — built to understand flight control fundamentals, not just to fly.</p>
-        <div class="tech">ESP32 · LEDC PWM · IRLZ44 MOSFETs</div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="numeral">·</div>
-      <div>
-        <span class="tag">DATA COLLECTION</span>
-        <h3>Wall-Mounted Infant Sleep Monitor</h3>
-        <p>An AMG8833 thermal sensor paired with an ESP32 to detect presence through a multi-state machine, with a browser-based UI for region-of-interest selection and an on-device ML pipeline in progress.</p>
-        <div class="tech">AMG8833 · ESP32 · Random Forest · micromlgen</div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="numeral">·</div>
-      <div>
-        <span class="tag">PHASE 2</span>
-        <h3>Faculty Past Paper Archive</h3>
-        <p>A full-stack web app giving the EEE faculty a searchable archive of past exam papers, with Row Level Security enforcing deny-by-default access and an admin approval workflow for uploads.</p>
-        <div class="tech">Supabase · Postgres · Row Level Security</div>
       </div>
     </div>
   </section>
@@ -549,11 +494,6 @@
   </section>
 
   <div class="divider"><div class="rule"></div><div class="mark"></div><div class="rule"></div></div>
-
-  <section class="now-block" data-reveal>
-    <h2 class="section-title">Now</h2>
-    <p>Advancing the dengue-monitoring research, collecting thermal frame data for the infant monitor's ML model, and testing the drone's first motor channel.</p>
-  </section>
 
   <footer id="contact">
     <div class="sign">Anuradhapura, Sri Lanka — open to conversations about hardware, ML, or anything in between.</div>
